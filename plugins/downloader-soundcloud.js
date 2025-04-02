@@ -73,6 +73,8 @@ let handler = async (m, { conn, text }) => {
 };
 
 // Cambia el Regex para que reconozca ".play"
-handler.command = ['play'];
+handler.command = ['play', 'mp3'];
+handler.help = ['play']
+handler.tags = ['play']
 
 export default handler;
