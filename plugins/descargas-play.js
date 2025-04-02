@@ -111,7 +111,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     await conn.reply(m.chat, infoMessage, m, JT);
     await m.react('🚅');
 
-    if (command === 'play' || command === 'yta' || command === 'ytmp3') {
+    if (command === 'play' || command === 'lay' || command === 'ytmp3') {
             const api = await (await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=audio&quality=128kbps&apikey=GataDios`)).json()
       const result = api.data.url;
       await conn.sendMessage(m.chat, { audio: { url: result }, mimetype: "audio/mpeg" }, { quoted: m });
@@ -138,13 +138,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     return m.reply(`⚠︎ Ocurrió un error: ${error.message}`);
   }
 };
-
-handler.command = ['play', 'plsy2', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'ytv'];
-handler.before = async (m, { conn }) => {
-  let text = m.text?.toLowerCase()?.trim();
-  if (text === 'play' || text === 'play2' || text === 'ytmp3' || text === 'yta' || text === 'ytmp4' || text === 'ytv') {
-    return handler(m, { conn });
-    handler.group = true;
+handler.customPrefix = /p|@|./i;
+handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'ytv'];
   }
 };
 
