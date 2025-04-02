@@ -67,12 +67,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 Hola *@${userId.split('@')[0]}* soy *𝐀𝐬𝐭𝐫𝐨-𝐁𝐨𝐭 ☆*
 
 ╔══════⌬『 💙 𝑰 𝑵 𝑭 𝑶 💙』
-║ ✎ *Cliente:* @${userId.split('@')[0]}
-║ ✎ *Bot:* ${(conn.user.jid == global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
-║ ✎ *Modo:* ${mode}
-║ ✎ *Usuarios »* ${totalreg}
-║ ✎ *Tiempo Activo:* ${uptime}
-║ ✎ *Comandos »* ${totalCommands}
+║ ✏️ *Cliente:* @${userId.split('@')[0]}
+║ 🤖 *Bot:* ${(conn.user.jid == global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
+║ 🤠 *Modo:* ${mode}
+║ 👋 *Usuarios »* ${totalreg}
+║ ⏰ *Tiempo Activo:* ${uptime}
+║ 📶 *Comandos »* ${totalCommands}
 ╚══════ ♢.💥.♢ ══════➤
 > Disfruta La Experiencia Con Astro 👾
 
