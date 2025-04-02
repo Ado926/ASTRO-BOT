@@ -39,8 +39,8 @@ global.listo = '⚡ *Aquí tienes ❛‿˂̵✧*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/56el7x.jpg')
 
 //Ids channel
-global.canalIdM = ["120363365444927738@newsletter", ""]
-global.canalNombreM = ["☆ 𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕 𝑴𝑫 • 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 ☆", "☆ 𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕 𝑴𝑫 • 𝒂𝒗𝒊𝒔𝒐𝒔 ☆"]
+global.canalIdM = ["120363365444927738@newsletter", "120363402846939411@newsletter"]
+global.canalNombreM = ["☆ 𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕 𝑴𝑫 • 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 ☆", "☆ Abundantes Botsitos ☆"]
 global.channelRD = await getRandomChannel()
 
 //fechas
