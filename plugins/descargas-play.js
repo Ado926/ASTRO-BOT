@@ -82,9 +82,9 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const { title, thumbnail, timestamp, views, ago, url } = videoInfo;
     const vistas = formatViews(views);
 
-    const infoMessage = `★ 𝑨𝑺𝑻𝑹𝑶-𝑩𝑶𝑻 𝑷𝑳𝑨𝒀 ★
+    const infoMessage = `★ 📤 𝑨𝑺𝑻𝑹𝑶-𝑩𝑶𝑻 𝑷𝑳𝑨𝒀 📤 ★
 
-🚀 Archivo Encontrado: 「 ${title} 」 
+🚀 Encontre esto: 「 ${title} 」 
 🌌 Canal: ${videoInfo.author.name || 'Desconocido'} 
 ✨ Vistas: ${vistas} 
 ⏱ Duración: ${timestamp}
@@ -109,7 +109,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     };
 
     await conn.reply(m.chat, infoMessage, m, JT);
-    await m.react('🌌');
+    await m.react('🚅');
 
     if (command === 'play' || command === 'yta' || command === 'ytmp3') {
             const api = await (await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=audio&quality=128kbps&apikey=GataDios`)).json()
@@ -139,7 +139,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['play', 'plsy2', 'ytmp3', 'yta', 'ytmp4', 'ytv'];
+handler.command = ['play', 'plsy2', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'ytv'];
 handler.before = async (m, { conn }) => {
   let text = m.text?.toLowerCase()?.trim();
   if (text === 'play' || text === 'play2' || text === 'ytmp3' || text === 'yta' || text === 'ytmp4' || text === 'ytv') {
