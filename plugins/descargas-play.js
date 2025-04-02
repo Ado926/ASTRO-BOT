@@ -139,7 +139,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 handler.customPrefix = /p|@|./y;
-handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'tmp4v'];
+handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'tmp4'];
 
 export default handler;
 
