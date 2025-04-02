@@ -85,11 +85,11 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const infoMessage = `★ 📤 𝑨𝑺𝑻𝑹𝑶-𝑩𝑶𝑻 𝑷𝑳𝑨𝒀 📤 ★
 
 🚀 _Encontre esto:_ 「 ${title} 」\n 
-📤 Canal: ${videoInfo.author.name || 'Desconocido'} 
-✨ Vistas: ${vistas} 
-⏱ Duración: ${timestamp}
-📅 Publicado: ${ago}
-🔗 Enlace: ${url}`;
+*📤 Canal:* ${videoInfo.author.name || 'Desconocido'} 
+*✨ Vistas:* ${vistas} 
+*⏱ Duración:* ${timestamp}
+*📅 Publicado:* ${ago}
+*🔗 Enlace:* ${url}`;
 
     const thumb = (await conn.getFile(thumbnail))?.data;
 
