@@ -34,10 +34,10 @@ conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, fkontak, m)
 
 }
 handler.help = ['ytsearch']
-handler.tags = ['buscador']
-handler.command = /^playlist|ytbuscar|yts(earch)?$/i
+handler.tags = ['search']
+handler.command = ['yts', 'ytsearch', 'busquedayutu']
 
-handler.register = true
+handler.register = false
 //handler.yenes = 1
 
 export default handler
