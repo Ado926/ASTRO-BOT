@@ -59,7 +59,8 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     });
   }
 };
-handler.help = ['ytmp3doc >Link<' 
+handler.help = ['ytmp3doc >Link<']
 handler.tags = ['downloader']
-handler.command = ['ytmp3d']
+handler.command = ['ytmp3doc']
+
 export default handler;
