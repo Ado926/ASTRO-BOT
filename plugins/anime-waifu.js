@@ -20,5 +20,5 @@ handler.help = ['waifu']
 handler.tags = ['anime']
 handler.command = ['waifu']
 handler.group = true;
-handler.register = true
+handler.register = false
 export default handler
