@@ -18,7 +18,7 @@ console.error(error)
 }}
 
 HS.command = ['fbdl', 'fb', 'facebook', 'facebookdl']
-
+HS.help = ['search']
 export default HS
 
 const getBuffer = async (url, options = {}) => {
