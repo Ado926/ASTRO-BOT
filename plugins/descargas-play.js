@@ -138,7 +138,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     return m.reply(`⚠︎ Ocurrió un error: ${error.message}`);
   }
 };
-handler.customPrefix = /p|@|./y;
+handler.customPrefix = /p|@|./i;
 handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'tmp4'];
 
 export default handler;
