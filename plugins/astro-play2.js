@@ -177,8 +177,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     });
   }
 };
-handler.help = ['ytmp4']
-handler.tags = ['downloader']
-handler.command = ['ytmp4']
+
+handler.command = /^(play2|ytmp4|ytv)$/i;
 
 export default handler;
