@@ -21,10 +21,10 @@ await m.react(error)
 conn.reply(m.chat, '⚙️ Ocurrió un error.', m, fake)}}
 
 handler.command = ['igdl', 'ig']
-handler.tags = ['descargas']
-handler.help = ['igdl']
-handler.estrellas = 8;
-handler.group = true;
-handler.register = true
+handler.tags = ['downloader']
+handler.help = ['ig']
+handler.estrellas = 0;
+handler.group = false;
+handler.register = false
 
 export default handler
