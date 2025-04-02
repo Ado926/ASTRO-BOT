@@ -18,7 +18,8 @@ console.error(error)
 }}
 
 HS.command = ['fbdl', 'fb', 'facebook', 'facebookdl']
-HS.help = ['search']
+HS.help = ['fb <Link>']
+HS.tags = ['search']
 export default HS
 
 const getBuffer = async (url, options = {}) => {
