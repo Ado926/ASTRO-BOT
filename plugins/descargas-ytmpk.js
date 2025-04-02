@@ -28,7 +28,7 @@ if (!link) return m.reply('《✧》Hubo un error al intentar acceder al link.\n
 await conn.sendMessage(m.chat, {
       video: { url: link },
       mimetype: "video/mp4",
-      caption: `🚀`,
+      caption: `_Video Launched By Astro_ 💪`,
     }, { quoted: m });
     m.react(done);
 }
