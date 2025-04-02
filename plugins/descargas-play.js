@@ -84,8 +84,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
     const infoMessage = `★ 📤 𝑨𝑺𝑻𝑹𝑶-𝑩𝑶𝑻 𝑷𝑳𝑨𝒀 📤 ★
 
-🚀 Encontre esto: 「 ${title} 」 
-🌌 Canal: ${videoInfo.author.name || 'Desconocido'} 
+🚀 _Encontre esto:_ 「 ${title} 」\n 
+📤 Canal: ${videoInfo.author.name || 'Desconocido'} 
 ✨ Vistas: ${vistas} 
 ⏱ Duración: ${timestamp}
 📅 Publicado: ${ago}
@@ -115,7 +115,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
             const api = await (await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=audio&quality=128kbps&apikey=GataDios`)).json()
       const result = api.data.url;
       await conn.sendMessage(m.chat, { audio: { url: result }, mimetype: "audio/mpeg" }, { quoted: m });
-    } else if (command === 'play2' || command === 'ytv' || command === 'ytmp4') {
+    } else if (command === 'play2' || command === 'tmp4' || command === 'ytmp4') {
       const response = await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=video&quality=480p&apikey=GataDios`);
       const json = await response.json();
 
@@ -138,8 +138,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     return m.reply(`⚠︎ Ocurrió un error: ${error.message}`);
   }
 };
-handler.customPrefix = /p|@|./i;
-handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'ytv'];
+handler.customPrefix = /p|@|./y;
+handler.command = ['play', 'lay', 'ytmp3', 'yta', 'mp3', 'ytmp4', 'tmp4v'];
 
 export default handler;
 
