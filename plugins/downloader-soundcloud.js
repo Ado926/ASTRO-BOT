@@ -27,13 +27,13 @@ const fetchWithRetries = async (url, maxRetries = 2) => {
 let handler = async (m, { conn, text }) => {
   if (!text || !text.trim()) {
     return conn.sendMessage(m.chat, {
-      text: " *Ingresa algun nombre de alguna canción para empezar a buscar :D",
+      text: "❗ *Ingresa un término de búsqueda para encontrar música.*\n\n*Ejemplo:* `.play No llores más`",
     });
   }
 
   try {
     // Reaccionar al mensaje inicial con 🕒
-    await conn.sendMessage(m.chat, { react: { text: "⏱️", key: m.key } });
+    await conn.sendMessage(m.chat, { react: { text: "🕒", key: m.key } });
 
     // Buscar en YouTube
     const searchResults = await yts(text.trim());
@@ -47,8 +47,9 @@ let handler = async (m, { conn, text }) => {
     // Enviar información del video con miniatura
     await conn.sendMessage(m.chat, {
       image: { url: video.thumbnail },
-      caption: `🎶 *Título:* ${video.title}\n👀 *Reproducciones:* ${video.views}\n⏱️ *Duración:* ${video.timestamp}\n📝 *Creador:* ${video.author.name}`,
-      )};
+      caption: `🎵 *Título:* ${video.title}\n👁️ *Vistas:* ${video.views}\n⏳ *Duración:* ${video.timestamp}\n✍️ *Autor:* ${video.author.name}`,
+    });
+
     // Enviar solo el audio
     const audioMessage = {
       audio: { url: apiData.download.url },
@@ -59,7 +60,7 @@ let handler = async (m, { conn, text }) => {
     await conn.sendMessage(m.chat, audioMessage, { quoted: m });
 
     // Reaccionar al mensaje original con ✅
-    await conn.sendMessage(m.chat, { react: { text: "👍", key: m.key } });
+    await conn.sendMessage(m.chat, { react: { text: "✅", key: m.key } });
   } catch (error) {
     console.error("Error:", error);
 
@@ -72,7 +73,7 @@ let handler = async (m, { conn, text }) => {
   }
 };
 
-//Cambia el Regex para que reconozca ".play"
+// Cambia el Regex para que reconozca ".play"
 handler.command = /^play$/i;
 
 export default handler;
