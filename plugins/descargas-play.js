@@ -5,10 +5,6 @@ import axios from "axios";
 const handler = async (m, { conn, text, usedPrefix, command }) => {
   let user = global.db.data.users[m.sender];
 
-  if (user.chocolates < 2) {
-    return conn.reply(m.chat, `ꕥ No tienes suficientes *Chocolates 🍫* Necesitas 2 más para usar este comando.`, m);
-  }
-
   try {
     if (!text.trim()) {
       return conn.reply(m.chat, `✧ Ingresa el nombre de la música a descargar.`, m);
@@ -91,9 +87,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   return conn.reply(m.chat, '⚠︎ Comando no reconocido.', m);
 }
 
-    user.chocolates -= 2;
-    conn.reply(m.chat, `ꕥ Has utilizado 2 *Chocolates 🍫*`, m);
-
+  
   } catch (error) {
     return m.reply(`⚠︎ Ocurrió un error: ${error}`);
   }
