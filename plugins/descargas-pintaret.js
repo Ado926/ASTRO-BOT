@@ -180,6 +180,6 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['pinterest'];
 handler.command = ['pinterest', 'pin'];
-handler.tags = ['buscador'];
+handler.tags = ['search'];
 
 export default handler;
