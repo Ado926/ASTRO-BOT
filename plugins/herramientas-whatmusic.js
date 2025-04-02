@@ -32,6 +32,8 @@ m.reply(txt)
 } else
 return m.reply('Por favor, responda a un audio o video para que pueda identificar la música.');
 }
-handler.command = /^quemusica|quemusicaes|whatmusic$/i
+handler.help = ['whatmusic']
+handler.tags = ['tools']
+handler.command = ['quemusicaes', 'whatmusic']
 //handler.estrellas = 6;
 export default handler
