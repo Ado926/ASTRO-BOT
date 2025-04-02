@@ -39,7 +39,7 @@ global.listo = '⚡ *Aquí tienes ❛‿˂̵✧*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/56el7x.jpg')
 
 //Ids channel
-global.canalIdM = ["120363365444927738@newsletter", "120363365444927738@newsletter"]
+global.canalIdM = ["120363365444927738@newsletter", ""]
 global.canalNombreM = ["☆ 𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕 𝑴𝑫 • 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 ☆", "☆ 𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕 𝑴𝑫 • 𝒂𝒗𝒊𝒔𝒐𝒔 ☆"]
 global.channelRD = await getRandomChannel()
 
@@ -53,14 +53,14 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'})
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true})
 
 //Reacciones De Comandos.!
-global.rwait = '🕒'
+global.rwait = '⏱️'
 global.done = '✅'
 global.error = '✖️'
 global.msm = '⚠︎'
 
 //Emojis determinado de astro Bot
 global.emoji = '✧'
-global.emoji2 = '⌬'
+global.emoji2 = '💙'
 global.emoji3 = '➤'
 global.emoji4 = '۝'
 global.emoji5 = '☾'
