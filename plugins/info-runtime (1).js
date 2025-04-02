@@ -5,8 +5,6 @@ let runtime = `${global.packname}
 *☁️ Tiempo activo:* \`${rTime(uptime)}\``
 conn.reply(m.chat, runtime, m, { contextInfo: { externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: packname, body: '🌿 ¡El Mejor Bot De WhatsApp!', previewType: 0, thumbnail: icons, sourceUrl: channel}}})
 }
-handler.help = ['runtime']
-handler.tags = ['main']
 handler.command = /^(uptime|runtime)$/i
 //handler.estrellas = 2;
 
