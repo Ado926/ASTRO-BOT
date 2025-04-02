@@ -7,7 +7,7 @@ let tags = {
   'main': 'INFO',
   'search': 'SEARCH',
   'game': 'GAME',
-  'busquedas': 'BUSQUEDAS 👽
+  'busquedas': 'BUSQUEDAS 👽',
   'serbot': 'SUB BOTS',
   'rpg': 'RPG',
   'sticker': 'STICKER',
