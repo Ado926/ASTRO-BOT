@@ -53,13 +53,13 @@ global.packname = '𝐀𝐬𝐭𝐫𝐨-𝐁𝐨𝐭'
 global.botname = '𝑨𝒔𝒕𝒓𝒐 - 𝑩𝒐𝒕'
 global.wm = '𝐀𝐬𝐭𝐫𝐨 𝐁𝐨𝐭'
 global.author = 'Made By 𝐃𝐞𝐲𝐥𝐢𝐧'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ 𝑫𝒆𝒚𝒍𝒊𝒏'
-global.textbot = '𝐀𝐬𝐭𝐫𝐨 - 𝐁𝐨𝐭 • Powered By 𝑫𝒆𝒚𝒍𝒊𝒏'
+global.dev = '© Edited ᑲᥡ Wirk'
+global.textbot = '𝐀𝐬𝐭𝐫𝐨 - 𝐁𝐨𝐭 • Edited By Wirk'
 global.etiqueta = '𝑫𝒆𝒚𝒍𝒊𝒏'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.moneda = 'llamas'
+global.moneda = 'fueguitos 📤'
 global.welcom1 = '❍ Edita Con El Comando setwelcome'
 global.welcom2 = '❍ Edita Con El Comando setbye'
 global.banner = 'https://tinyurl.com/25md9gsv'
