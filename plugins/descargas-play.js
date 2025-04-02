@@ -93,7 +93,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }  
 };  
   
-handler.command = handler.help = ['play', 'mp3', 'playaudio', 'play2', 'mp4', 'playvideo'];  
+handler.command = handler.command = ['play2', 'mp4', 'playvideo'];  
 handler.tags = ['downloader'];  
   
 export default handler;  
