@@ -51,7 +51,7 @@ await conn.reply(message.chat, error.toString(), message)
 }}
 
 handler.help = ['tiktoksearch <txt>']
-handler.tags = ['buscador']
+handler.tags = ['busquedas']
 handler.command = ['tiktoksearch', 'ttss', 'tiktoks']
 handler.group = true
 handler.coin = 2
